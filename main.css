@@ -999,10 +999,11 @@ li {
 
   /* EXTRA-CURICULAR */
   .extra-inner {
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15%;
+    flex-direction: column;
+  }
+
+  .extra-inner .extra-box {
+    margin: 10px 0;
   }
 
   /* CONTACT */
