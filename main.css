@@ -1,3 +1,13 @@
+/* Color Selector */
+:root {
+  --myorange: #ff6348;
+  --mywhite: #eee;
+  --myblue: #2f3542;
+  --mygreen: #2ecc71;
+  --mysilver: silver;
+  --myblack: #333;
+}
+
 /*Start global*/
 * {
   margin: 0;
@@ -141,7 +151,7 @@ li {
 .menu-toggler {
   position: absolute;
   top: 5rem;
-  right: 5rem;
+  left: 5rem;
   width: 5rem;
   height: 4rem;
   display: flex;
@@ -198,8 +208,7 @@ li {
 }
 
 .landing-text h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lobster", cursive;
   font-size: 2rem;
   font-weight: 300;
   text-transform: capitalize;
@@ -259,7 +268,7 @@ li {
   margin: 0;
   padding: 18px 10px;
   background: rgba(255, 109, 72);
-  color: #fff;
+  color: #eee;
   border-radius: 100px;
   box-shadow: 0 0 0 3px rgba(238, 227, 231, 0.2);
 }
@@ -269,23 +278,16 @@ li {
 }
 
 .fa-instagram-square:hover {
-  color: #0f7769;
+  color: #a3741e;
 }
 
 .fa-linkedin:hover {
-  color: #a02c79;
+  color: #13bddb;
 }
 
 /*End about*/
 
 /*Start education*/
-
-/* .education .container {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
 .timeline {
   justify-content: center;
   align-items: center;
@@ -303,7 +305,7 @@ li {
   left: 50%;
   width: 2px;
   height: 100%;
-  background: #c5c5c5;
+  background: #eee;
 }
 
 .timeline ul {
@@ -387,7 +389,7 @@ li {
   margin: 0;
   padding: 8px 16px;
   background: rgba(214, 98, 30, 0.2);
-  color: #fff;
+  color: #eee;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(238, 227, 231, 0.2);
 }
@@ -399,7 +401,7 @@ li {
   margin: 0;
   padding: 8px 16px;
   background: rgba(214, 98, 30, 0.2);
-  color: #fff;
+  color: #eee;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(238, 227, 231, 0.2);
 }
@@ -419,7 +421,7 @@ li {
 
 .skill-box {
   padding: 1rem;
-  color: #ddd;
+  color: #eee;
   cursor: pointer;
 }
 
@@ -470,7 +472,7 @@ li {
   height: 90px;
   position: relative;
   border-radius: 45px;
-  background-color: #fff;
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +491,7 @@ li {
 }
 
 .skill-title h3 {
-  color: #fff;
+  color: #eee;
   text-transform: uppercase;
   margin: 0.5rem;
 }
@@ -541,6 +543,7 @@ li {
 .container .project-box:hover {
   background: #ff6348;
   color: #2f3542;
+  transition: 650ms;
 }
 
 .container .project-box i {
@@ -558,7 +561,235 @@ li {
 .project-content p {
   font-size: small;
 }
+
+#click-1,
+#click-2,
+#click-3,
+#click-4,
+#click-5,
+#click-6 {
+  display: none;
+}
+
+.project-description {
+  align-items: center;
+  align-content: center;
+}
+
+.click-me {
+  margin-top: 20px;
+  font-size: small;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.click-me:hover {
+  background: #2f3542;
+}
+
+.content-in {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 550px;
+  background: #ff6348;
+  opacity: 0.9;
+  z-index: 100;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.4);
+}
+
+.content-in .project-content-image {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.project-img-container {
+  width: 25%;
+  margin: 10px 20px;
+  align-items: center;
+}
+
+#click-1:checked ~ .content-in,
+#click-2:checked ~ .content-in,
+#click-3:checked ~ .content-in,
+#click-4:checked ~ .content-in,
+#click-5:checked ~ .content-in,
+#click-6:checked ~ .content-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-in {
+  height: 68px;
+  background: #eee;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.4);
+}
+
+.header-in h2 {
+  color: #2f3542;
+  align-content: center;
+  padding-top: 2rem;
+}
+
+.content-in p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f3542;
+  text-align: center;
+  justify-content: center;
+  padding: 0 10px 10px 10px;
+}
+
+.close-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 8px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #2f3542;
+  color: #ff6348;
+  transition: 0.5s;
+}
+
 /*End project*/
+
+/* Start photoshop gallery */
+.gallery .container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.img-gallery {
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-3"
+    "img-1 img-4 img-5 img-6"
+    "img-7 img-7 img-8 img-6";
+}
+
+.img-gallery a {
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.img-gallery a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-gallery a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-gallery a:hover i,
+.img-gallery a:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 31.5rem;
+  background-image: url(/images/gallery/img-1.jpg);
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url(/images/gallery/img-2.jpg);
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url(/images/gallery/img-3.jpg);
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url(/images/gallery/img-4.jpg);
+}
+
+.img-5 {
+  grid-area: img-5;
+  background-image: url(/images/gallery/img-5.jpg);
+}
+
+.img-6 {
+  grid-area: img-6;
+  min-height: 31.5rem;
+  background-image: url(/images/gallery/img-6.jpg);
+}
+
+.img-7 {
+  grid-area: img-7;
+  background-image: url(/images/gallery/img-7.jpg);
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url(/images/gallery/img-8.jpg);
+}
+
+/* End photoshop gallery */
 
 /*Start work-experience*/
 .work-experience .section-heading {
@@ -796,7 +1027,7 @@ li {
 }
 
 .up i {
-  color: #16162d;
+  color: #333;
   font-size: 2rem;
   margin: auto;
 }
@@ -997,6 +1228,19 @@ li {
     grid-row: unset !important;
   }
 
+  .content-in {
+    width: 350px;
+    height: 600px;
+  }
+
+  .header-in {
+    height: 88px;
+  }
+
+  .header-in h2 {
+    font-size: 2rem;
+  }
+
   /* EXTRA-CURICULAR */
   .extra-inner {
     flex-direction: column;
@@ -1025,6 +1269,28 @@ li {
 
   .top-nav .nav-list li {
     margin: 0.8rem 0;
+  }
+
+  /* GALLERY */
+  .img-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-2 img-2"
+      "img-1 img-1 img-3 img-3"
+      "img-4 img-4 img-5 img-5"
+      "img-6 img-7 img-7 img-7"
+      "img-8 img-8 img-8 img-8";
+  }
+
+  .img-gallery a {
+    height: 10rem;
+  }
+
+  .img-1 {
+    min-height: 21.5rem;
+  }
+
+  .img-6 {
+    min-height: 10rem;
   }
 }
 

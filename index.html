@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600&family=Quicksand:wght@300&family=Red+Rose&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Lobster&family=Monoton&family=Montserrat:wght@400;500;600&family=Quicksand:wght@300&family=Red+Rose&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
@@ -31,6 +31,8 @@
           <li><a href="#education" class="nav-link">education</a></li>
           <li><a href="#skills" class="nav-link">skills</a></li>
           <li><a href="#project" class="nav-link">project</a></li>
+          <li></li>
+          <li><a href="#gallery" class="nav-link">gallery</a></li>
           <li>
             <a href="#work-experience" class="nav-link">work experience</a>
           </li>
@@ -104,11 +106,11 @@
 
     <section class="education" id="education">
       <div class="container">
-        <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
+        <div class="section-heading" data-aos="fade-up" data-aos-delay="300">
           <h1>Education</h1>
           <h6>My education background</h6>
         </div>
-        <div class="timeline" data-aos="fade-in" data-aos-delay="300">
+        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
           <ul>
             <li>
               <div class="education-content">
@@ -263,16 +265,120 @@
         </div>
         <div class="project-box" data-aos="fade-left" data-aos-delay="600">
           <div class="project-content">
-            <i class="far fa-dot-circle"></i>
-            <h3>AR SNOOKER PLAYING FOR SPECTATORS</h3>
+            <i class="fas fa-window-restore"></i>
+            <h3>FULLY RESPONSIVE PORTFOLIO WEBSITE</h3>
             <p>
-              My FYP project. Program with C++ languages and OpenCV library.
-              Functioning to draw the prediction trajectories of moving balls.
+              Build fully responsive website using HTML, CSS, and Javascript.
+              Adding some animation by using animation on scroll library(AOS).
+              Deploy the website through netlify by push it to github.
             </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-1" /><label
+                for="click-1"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    FULLY RESPONSIVE PORTFOLIO WEBSITE
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img src="/images/project/WEB/Capture.PNG" alt="" />
+                  </div>
+                </div>
+                <h3>Build this fully responsive website</h3>
+                <p>
+                  A fully responsive website will rescale itself to preserve the
+                  user experience and look and feel across all devices - with no
+                  irritating zooming, scrolling or resizing.
+                </p>
+                <h3>Different layout in different section</h3>
+                <p>
+                  Every section has different layout like timeline, image
+                  gallery and masonry layouts
+                </p>
+                <h3>Animation</h3>
+                <p>
+                  Using animation on scroll library (AOS) to put some varies
+                  fading animation
+                </p>
+                <h3>Deployment</h3>
+                <p>
+                  Deploy the website through netlify. One of the best free
+                  hosting platform for static website which can instantly deploy
+                  site to global network from git.
+                </p>
+                <label for="click-1" class="close-btn">Close</label>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="project-box" data-aos="fade-left" data-aos-delay="900">
+          <div class="project-content">
+            <i class="far fa-dot-circle"></i>
+            <h3>AR SNOOKER PLAYING FOR SPECTATORS VISUALISATION</h3>
+            <p>
+              My FYP project. Program with C++ languages and OpenCV library.
+              Functioning to draw the prediction trajectories of moving balls.
+            </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-2" /><label
+                for="click-2"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    AR SNOOKER PLAYING FOR SPECTATORS VISUALISATION
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img
+                      src="/images/project/AR SNOOKER/BALL DETECT.PNG"
+                      alt=""
+                    />
+                  </div>
+                  <div class="project-img-container">
+                    <img
+                      src="/images/project/AR SNOOKER/BALL TRAJECTORY.PNG"
+                      alt=""
+                    />
+                  </div>
+                  <div class="project-img-container">
+                    <img src="/images/project/AR SNOOKER/MOVEMENT.PNG" alt="" />
+                  </div>
+                </div>
+                <h3>Overview</h3>
+                <p>
+                  Augmented reality snooker playing for spectators’
+                  visualization is a unique idea for bringing engineering to the
+                  well-known game of snooker. The project is to develop of an
+                  augmented reality system that provides the visualization of
+                  the estimated snooker balls trajectories for the spectators
+                  while the game resumes
+                </p>
+                <h3>Problem Statement</h3>
+                <p>
+                  Knowing the tactical of the snooker player during the snooker
+                  game is quite interesting ability to have. However, people
+                  can’t visualize or predict the movement of the ball. So, the
+                  project basically to develop the augmented reality system on
+                  this game.
+                </p>
+
+                <label for="click-2" class="close-btn">Close</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box" data-aos="fade-left" data-aos-delay="600">
           <div class="project-content">
             <i class="fab fa-android"></i>
             <h3>IIUM ONLINE SHOPPING APP</h3>
@@ -280,10 +386,50 @@
               My FYP project. Program with C++ languages and OpenCV library.
               Functioning to draw the prediction trajectories of moving balls.
             </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-3" /><label
+                for="click-3"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    IIUM ONLINE SHOPPING APP
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img
+                      src="/images/project/IIUM ONLINE SHOP/logo.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3>Introduction</h3>
+                <p>
+                  IIUM online is currently the platform used by user to promote
+                  their product or to buy product from seller. The problem face
+                  by IIUM community is that they have difficulty to promote or
+                  search the product via IIUM online. Online shopping is the
+                  process of buying goods and services from merchant who sell on
+                  the internet.
+                </p>
+                <h3>Objective</h3>
+                <p>
+                  To establish platform for IIUM community to do online
+                  business, to make it easier for IIUM community to do online
+                  shopping inside IIUM campus and to promote their product via
+                  online
+                </p>
+
+                <label for="click-3" class="close-btn">Close</label>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="project-box" data-aos="fade-left" data-aos-delay="600">
+        <div class="project-box" data-aos="fade-left" data-aos-delay="900">
           <div class="project-content">
             <i class="fas fa-umbrella-beach"></i>
             <h3>REMOTE CONTROL BEACH CLEANER</h3>
@@ -291,10 +437,45 @@
               My IDP project. Engage with some mechanical part and also software
               part. Using Arduino as it’s brain.
             </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-4" /><label
+                for="click-4"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    REMOTE CONTROL BEACH CLEANER
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img src="/images/project/RCBC/RCBC1.PNG" alt="" />
+                  </div>
+                  <div class="project-img-container">
+                    <img src="/images/project/RCBC/RCBC2.PNG" alt="" />
+                  </div>
+                  <div class="project-img-container">
+                    <img src="/images/project/RCBC/RCBC3.PNG" alt="" />
+                  </div>
+                </div>
+                <h3>Idea</h3>
+                <video width="350" height="170" controls>
+                  <source
+                    src="/images/project/RCBC/RCBC.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <p>
+                  <label for="click-4" class="close-btn">Close</label>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="project-box" data-aos="fade-left" data-aos-delay="900">
+        <div class="project-box" data-aos="fade-left" data-aos-delay="1200">
           <div class="project-content">
             <i class="fas fa-spell-check"></i>
             <h3>SPELL CHECKER</h3>
@@ -302,10 +483,40 @@
               Program with Phyton languange. Spell checker able to check
               spelling, auto-correct and giving the suggestion words.
             </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-5" /><label
+                for="click-5"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    SPELL CHECKER
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img src="/images/project/SPELL CHECKER/spell.png" alt="" />
+                  </div>
+                </div>
+                <h3>The Algorithm</h3>
+                <p>
+                  Basically its based on The Peter Norvig magic spell checker
+                  algorithm
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?time_continue=12&v=x2Jn709rSeY&feature=emb_title"
+                  target="_blank"
+                  >See the explaination video here</a
+                >
+                <label for="click-5" class="close-btn">Close</label>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="project-box" data-aos="fade-left" data-aos-delay="1200">
+        <div class="project-box" data-aos="fade-left" data-aos-delay="900">
           <div class="project-content">
             <i class="fas fa-dumpster"></i>
             <h3>SMART WASTE MANAGEMENT USING IOT</h3>
@@ -313,13 +524,122 @@
               Research on how smart waste management can be implement by using
               the Internet of Thing.
             </p>
+            <div class="project-description">
+              <input type="checkbox" id="click-6" /><label
+                for="click-6"
+                class="click-me"
+                >read more</label
+              >
+              <div class="content-in">
+                <div class="header-in">
+                  <h2>
+                    SMART WASTE MANAGEMENT USING IOT
+                  </h2>
+                </div>
+                <div class="project-content-image">
+                  <div class="project-img-container">
+                    <img src="/images/project/IOT/dustbin.png" alt="" />
+                  </div>
+                </div>
+                <h3>Research</h3>
+                <p>
+                  This basically the research on Smart Waste Management using
+                  Internet-of-Things for smart cities. It conclude that It is
+                  very important to have a robust way of managing the waste.
+                  With the proposed intelligent waste management, a smarter way
+                  of handling and disposal of waste is created. The system is
+                  based on IoT sensing prototype. It is responsible for
+                  measuring the waste level in the waste bins and later send
+                  this data (through Internet) to a server for storage and
+                  processing. This data helps to compute the optimized
+                  collection routes for the workers.
+                </p>
+
+                <label for="click-6" class="close-btn">Close</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="work-experience" id="work-experience">
+    <section class="gallery" id="gallery">
       <div class="container" data-aos="fade-out" data-aos-delay="300">
+        <div class="section-heading">
+          <h1>photoshop gallery</h1>
+          <h6>some of my photoshop work</h6>
+        </div>
+        <div class="img-gallery">
+          <a
+            href="/images/gallery/img-1.jpg"
+            class="img-1"
+            target="_blank"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-2.jpg"
+            class="img-2"
+            target="_blank"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-3.jpg"
+            class="img-3"
+            target="_blank"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-4.jpg"
+            class="img-4"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-5.jpg"
+            class="img-5"
+            target="_blank"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-6.jpg"
+            class="img-6"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-7.jpg"
+            class="img-7"
+            target="_blank"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+          <a
+            href="/images/gallery/img-8.jpg"
+            class="img-8"
+            target="_blank"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            ><i class="fas fa-expand"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-experience" id="work-experience">
+      <div class="container" data-aos="fade-down" data-aos-delay="300">
         <div class="section-heading">
           <h1>Work-experience</h1>
           <h6>Past jobs</h6>
